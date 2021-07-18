@@ -1,5 +1,4 @@
 package model;
-
 /**
  * Tripulante
  */
@@ -31,10 +30,10 @@ public class Tripulante {
     public double getNota3() {
         return nota3;
     }
-    public void setEmail(String email) {
+    public void getEmail(String email) {
         this.email = email;
     }
-    public void setNumeroIdentificacion(float numeroIdentificacion) {
+    public void getNumeroIdentificacion(float numeroIdentificacion) {
         this.numeroIdentificacion = numeroIdentificacion;
     }
 
@@ -132,7 +131,7 @@ public class Tripulante {
             }
         } 
     }*/
-    public double getLowNote(){
+    /*public double getLowNote(){
         if (nota1 <= nota2 && nota1 <= nota3) {
             return nota1;
         } else if (nota2 <= nota3){
@@ -140,7 +139,7 @@ public class Tripulante {
         } else {
             return nota3;
         }
-    } 
+    } */
     public boolean checkIfPass() {
         if(getAverage() <= 3){
             return true;
