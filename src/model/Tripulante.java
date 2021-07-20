@@ -30,13 +30,12 @@ public class Tripulante {
     public double getNota3() {
         return nota3;
     }
-    public void getEmail(String email) {
-        this.email = email;
+    public String getEmail() {
+        return email;
     }
-    public void getNumeroIdentificacion(float numeroIdentificacion) {
-        this.numeroIdentificacion = numeroIdentificacion;
+    public float getNumeroIdentificacion() {
+        return numeroIdentificacion;
     }
-
     /**Setters */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -71,17 +70,7 @@ public class Tripulante {
             return nota3;
         }
     }
-
-    public double getLowNote(){
-        if (nota1 <= nota2 && nota1 <= nota3) {
-            return nota1;
-        } else if(nota2 <= nota3){
-            return nota2;
-        } else{
-            return nota3;
-        }
-    }
-     /** public double getHighNote(){
+    /** public double getHighNote(){
         if (nota1 >= nota2 && nota1 >= nota3) {
             return nota1;
         } 
@@ -91,7 +80,6 @@ public class Tripulante {
             return nota3;
         }
     }*/
-
      /** public double getHighNote(){
         if (nota1 >= nota2 && nota1 >= nota3) {
             return nota1;
@@ -101,7 +89,6 @@ public class Tripulante {
         }
         return nota3;   
     } */
-
     /**public double getHighNote(){
         double respuesta;
         if (nota1 >= nota2 && nota1 >= nota3) {
@@ -113,7 +100,6 @@ public class Tripulante {
         }
         return respuesta;
     } */
-
     /**public double getHighNote(){
         double respuesta;
 
@@ -131,6 +117,15 @@ public class Tripulante {
             }
         } 
     }*/
+    public double getLowNote(){
+        if (nota1 <= nota2 && nota1 <= nota3) {
+            return nota1;
+        } else if(nota2 <= nota3){
+            return nota2;
+        } else{
+            return nota3;
+        }
+    }
     /*public double getLowNote(){
         if (nota1 <= nota2 && nota1 <= nota3) {
             return nota1;

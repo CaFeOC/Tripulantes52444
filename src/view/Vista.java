@@ -11,6 +11,7 @@ public class Vista {
         
         Formador profesor = new Formador("Carlitos", 321654);
         System.out.println(profesor.getNombre());
+        System.out.println(profesor.getCodigo());
         
         
         System.out.println(cursoFrances.getFormador().getNombre());
@@ -25,5 +26,4 @@ public class Vista {
         //System.out.println(cursoFrances.getFormador());
         
     }
-    
 }

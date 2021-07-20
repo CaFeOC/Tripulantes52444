@@ -1,5 +1,5 @@
 package model;
-
+//ATRIBUTOS
 public class Curso {
     private int codigo;
     private String nombre;
@@ -7,6 +7,7 @@ public class Curso {
 
     private Formador formador;
 
+    //CONSTRUCTOR
     public Curso(int pCodigo, String pNombre, char pJornada, int fCodigo, String fNombre) {
         super();
         this.codigo =  pCodigo;
@@ -14,7 +15,7 @@ public class Curso {
         this.jornada = pJornada;
         formador = new Formador(fNombre, fCodigo);
     }
-
+    //GETTERS
     public int getCodigo() {
         return codigo;
     }
@@ -27,10 +28,7 @@ public class Curso {
     public Formador getFormador(){
         return formador;
     }
-    public void setNombre(String string){
-        
-    }
-
-    
-    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }   
 }
